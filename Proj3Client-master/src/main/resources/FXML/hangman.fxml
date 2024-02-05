@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller"
+            fx:id="hangmanPlayScreen" styleClass="hangmanPlayScreen">
+    <top>
+        <VBox>
+            <HBox alignment="TOP_RIGHT" fx:id="topHolder">
+                <Button fx:id="instBtn" styleClass="button" text="Instructions" onAction="#instructionsPop"/>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER">
+                <Text fx:id="wordDisplay" text="hello"/>
+            </HBox>
+    </VBox>
+    </top>
+    <center>
+        <Text fx:id="characterDraw" text=" "/>
+    </center>
+    <bottom>
+    <HBox fx:id="lettters" styleClass="lettersContent">
+        <GridPane styleClass="lettersContent" hgap="5" vgap="5">
+            <Button text="A" onAction="#alphabetHandle" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Button text="B" onAction="#alphabetHandle" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Button text="C" onAction="#alphabetHandle" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Button text="D" onAction="#alphabetHandle" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Button text="E" onAction="#alphabetHandle" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <Button text="F" onAction="#alphabetHandle" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+            <Button text="G" onAction="#alphabetHandle" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+            <Button text="H" onAction="#alphabetHandle" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+            <Button text="I" onAction="#alphabetHandle" GridPane.columnIndex="8" GridPane.rowIndex="0" />
+            <Button text="J" onAction="#alphabetHandle" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Button text="K" onAction="#alphabetHandle" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button text="L" onAction="#alphabetHandle" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button text="M" onAction="#alphabetHandle" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button text="N" onAction="#alphabetHandle" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button text="O" onAction="#alphabetHandle" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button text="P" onAction="#alphabetHandle" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button text="Q" onAction="#alphabetHandle" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button text="R" onAction="#alphabetHandle" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Button text="S" onAction="#alphabetHandle" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Button text="T" onAction="#alphabetHandle" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button text="U" onAction="#alphabetHandle" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button text="V" onAction="#alphabetHandle" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button text="W" onAction="#alphabetHandle" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button text="X" onAction="#alphabetHandle" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button text="Y" onAction="#alphabetHandle" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Button text="Z" onAction="#alphabetHandle" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Button text=" " onAction="#alphabetHandle" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+        </GridPane>
+    </HBox>
+    </bottom>
+
+</BorderPane>

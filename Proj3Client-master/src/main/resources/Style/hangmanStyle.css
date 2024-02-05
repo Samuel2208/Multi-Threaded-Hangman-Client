@@ -1,0 +1,43 @@
+.hangmanPlayScreen{
+    -fx-alignment: center;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 20;
+    -fx-background-color: #e7decc;
+    -fx-border-pane-hgrow: ALWAYS;
+    -fx-border-pane-vgrow: ALWAYS;
+}
+
+.lettersContent{
+    -fx-alignment: center;
+    -fx-padding: 10;
+}
+
+.button{
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #4CAF50 0%, #45A049 100%), /* Green gradient */
+            #4CAF50, /* Green color */
+            #81C784, /* Light green color */
+            radial-gradient(center 50% 50%, radius 100%, #81C784, #66BB6A);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-spacing:20 ;
+}
+
+.button:pressed{
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+#instBtn,#topHolder{
+    -fx-alignment: TOP_RIGHT;
+    -fx-padding:10;
+}
+
+.characterDraw{
+    -fx-font-size: 20;
+    -fx-stroke: red;
+}

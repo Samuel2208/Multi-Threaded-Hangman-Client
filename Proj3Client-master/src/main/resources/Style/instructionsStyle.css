@@ -1,0 +1,15 @@
+.mainCont{
+    -fx-background-color: #e7decc;
+    -fx-padding: 20;
+    -fx-alignment: center;
+    -fx-font-family: "Lucida Console";
+    -fx-font-size: 15;
+}
+
+.contentPop{
+    -fx-alignment: center;
+}
+
+.instText{
+    -fx-background-color: #ccd9e7 ;
+}
