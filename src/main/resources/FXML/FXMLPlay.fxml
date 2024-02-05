@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller"
+styleClass="mainContents">
+    <top><HBox alignment="TOP_RIGHT" fx:id="topHolder">
+        <Button fx:id="instBtn" styleClass="button" text="Instructions" onAction="#instructionsPop"/>
+    </HBox>
+
+    </top>
+    <center>
+        <VBox fx:id="mainContents" styleClass="mainContents">
+            <Text text="Hangman"/>
+            <Text text="Select a Category"/>
+            <HBox fx:id="portHandle" styleClass="choiceBtns">
+                <Button  fx:id="cat1" text="Colors" onAction="#switchToPlay1"/>
+                <Button fx:id="cat2" text="Pets" onAction="#switchToPlay2"/>
+            </HBox>
+            <Button fx:id="cat3" text="U.S. States" onAction="#switchToPlay3"/>
+        </VBox>
+    </center>
+
+</BorderPane>
